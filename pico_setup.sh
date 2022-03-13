@@ -24,4 +24,4 @@ git clone -b master https://github.com/raspberrypi/pico-project-generator.git
 sudo apt install -y minicom
 
 echo "export PICO_SDK_PATH='/home/pwn/pico/pico-sdk'" >> ~/.profile
-export PATH=$HOME/pico-project-generator:$PATH >> ~/.bashrc
+export PATH=$HOME/pico/pico-project-generator:$PATH >> ~/.bashrc
