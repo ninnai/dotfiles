@@ -18,6 +18,10 @@ cd pico-sdk
 git pull
 git submodule update
 
-sudo apt install minicom
+cd ../
+git clone -b master https://github.com/raspberrypi/pico-project-generator.git
+
+sudo apt install -y minicom
 
 echo "export PICO_SDK_PATH='/home/pwn/pico/pico-sdk'" >> ~/.profile
+export $PATH="$HOME/pico-project-generator:$PATH" >> ~/.bashrc
